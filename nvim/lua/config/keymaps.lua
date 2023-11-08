@@ -91,6 +91,7 @@ if vim.g.neovide then
   bind("c", "<D-v>", "<C-R>+") -- Paste command mode
   bind("i", "<D-v>", '<ESC>l"+Pli') -- Paste insert mode
 end
+setkeymap("", "<D-s>", ":w<CR>", defaultKeyOption)
 setkeymap("", "<D-v>", "+p<CR>", defaultKeyOption)
 setkeymap("!", "<D-v>", "<C-R>+", defaultKeyOption)
 setkeymap("t", "<D-v>", "<C-R>+", defaultKeyOption)
