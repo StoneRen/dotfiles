@@ -8,7 +8,7 @@ return {
         desc = "Add/Append gitignore file",
         function()
           local gitignore = require("gitignore")
-          gitignore.generate()
+          gitignore.generate({})
         end,
       },
     },

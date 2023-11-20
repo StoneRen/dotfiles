@@ -20,3 +20,7 @@ opt.relativenumber = false
 opt.wrap = true
 -- 保留虚拟行的缩进，只在启用wrap时可见
 opt.breakindent = true
+
+if os.getenv("COLORTERM") == "truecolor" or os.getenv("COLORTERM") == "24bit" or vim.g.neovide then
+  opt.termguicolors = true
+end
