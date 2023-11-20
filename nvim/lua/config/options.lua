@@ -4,18 +4,19 @@
 
 local opt = vim.opt
 
--- clipboard
-opt.clipboard = "unnamedplus" -- 与系统粘贴板同步
+-- Editor Options
+opt.encoding = "UTF-8"
+opt.swapfile = false
+opt.backup = false
+opt.autochdir = true
+-- 总是显示光标位置
+opt.ruler = true
+
+-- line numbers
+opt.relativenumber = false
 
 -- line wrapping
 -- 长文本换行
 opt.wrap = true
 -- 保留虚拟行的缩进，只在启用wrap时可见
 opt.breakindent = true
-
--- appearance
-if os.getenv('COLORTERM') == 'truecolor' or os.getenv('COLORTERM') == '24bit' or vim.g.neovide then
-  opt.termguicolors = true
-  -- vim.cmd([[ set t_8f=^[[38;2;%lu;%lu;%lum ]])
-  -- vim.cmd([[ set t_8b=^[[48;2;%lu;%lu;%lum ]])
-end

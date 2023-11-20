@@ -12,7 +12,7 @@ return {
       colorscheme = "kanagawa-wave",
     },
     init = function()
-      local alpha_value = 0.8
+      local alpha_value = 0.9
       local g = vim.g
       local cmd = vim.cmd
       if os.getenv("COLORTERM") == "truecolor" or os.getenv("COLORTERM") == "24bit" or g.neovide then
