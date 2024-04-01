@@ -1,7 +1,9 @@
 return {
   {
+    -- https://github.com/python-rope/ropevim
     "python-rope/ropevim",
     ft = "python",
+    enable = false,
     keys = {
       { "<M-/>", "<cmd>call RopeCodeAssist()<cr>", desc = "Python Code Assist" },
       { "<M-?>", "<cmd>call RopeLuckyAssist()<cr>", desc = "Python Lucky Assist" },
