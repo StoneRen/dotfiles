@@ -13,7 +13,7 @@ opt.autochdir = true
 opt.ruler = true
 
 -- line numbers
-opt.relativenumber = false
+opt.relativenumber = true
 
 -- line wrapping
 -- 长文本换行
