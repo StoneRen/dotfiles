@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("stoneren.plugins",{
+require("lazy").setup({{import = "stoneren.plugins"},{import = "stoneren.plugins.lsp"}},{
   checker = {
     enabled = true,
     notify = false,
