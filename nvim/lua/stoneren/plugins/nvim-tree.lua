@@ -20,6 +20,9 @@ return {
   config = function()
     local nvimtree = require("nvim-tree")
 
+    -- 当删除时，`brew install trash`
+    -- https://github.com/nvim-tree/nvim-tree.lua/issues/1366#issuecomment-1646763066
+    
     -- recommended settings from nvim-tree documentation
     vim.g.loaded_netrw = 1
     vim.g.loaded_netrwPlugin = 1
