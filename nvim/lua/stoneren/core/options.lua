@@ -1,14 +1,17 @@
 vim.cmd("let g:netrw_liststyle = 3")
 
-
 local opt = vim.opt
 
 opt.relativenumber = true
 opt.number = true
 
--- tabs & indentation
-opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
-opt.shiftwidth = 2 -- 2 spaces for indent width
+-- Tab set to two spaces
+--- 1个tab显示几个空格的长度
+opt.tabstop = 2
+--- 自动缩进空白字符的个数
+opt.shiftwidth = 2
+--- 在编辑模式下按退格键缩回的长度
+opt.softtabstop = 2
 opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
 

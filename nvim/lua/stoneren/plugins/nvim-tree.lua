@@ -1,5 +1,5 @@
 local function my_on_attach(bufnr)
-  local api = require "nvim-tree.api"
+  local api = require("nvim-tree.api")
 
   local function opts(desc)
     return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
@@ -9,10 +9,9 @@ local function my_on_attach(bufnr)
   api.config.mappings.default_on_attach(bufnr)
 
   -- custom mappings
-  vim.keymap.set('n', 't',   api.node.open.tab,                   opts('Open: New Tab'))
-  vim.keymap.set('n', '?',     api.tree.toggle_help,                  opts('Help'))
+  vim.keymap.set("n", "t", api.node.open.tab, opts("Open: New Tab"))
+  vim.keymap.set("n", "?", api.tree.toggle_help, opts("Help"))
 end
-
 
 return {
   "nvim-tree/nvim-tree.lua",
@@ -22,7 +21,7 @@ return {
 
     -- 当删除时，`brew install trash`
     -- https://github.com/nvim-tree/nvim-tree.lua/issues/1366#issuecomment-1646763066
-    
+
     -- recommended settings from nvim-tree documentation
     vim.g.loaded_netrw = 1
     vim.g.loaded_netrwPlugin = 1
@@ -59,7 +58,7 @@ return {
         },
       },
       filters = {
-        custom = { ".DS_Store" },
+        custom = { ".DS_Store", ".git" },
       },
       git = {
         ignore = false,
@@ -73,5 +72,5 @@ return {
     keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggle file explorer on current file" }) -- toggle file explorer on current file
     keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" }) -- collapse file explorer
     keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" }) -- refresh file explorer
-  end
+  end,
 }
