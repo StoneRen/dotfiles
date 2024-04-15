@@ -5,6 +5,8 @@ local opt = vim.opt
 opt.relativenumber = true
 opt.number = true
 
+opt.autochdir = true
+
 -- Tab set to two spaces
 --- 1个tab显示几个空格的长度
 opt.tabstop = 2
@@ -41,3 +43,4 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+opt.backup = false
