@@ -1,4 +1,4 @@
-vim.cmd("let g:netrw_liststyle = 3")
+-- vim.cmd("let g:netrw_liststyle = 3")
 
 local opt = vim.opt
 
@@ -17,7 +17,8 @@ opt.softtabstop = 2
 opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
 
-opt.wrap = false
+opt.wrap = true -- 长文本换行
+opt.breakindent = true -- 保留虚拟行的缩进，只在启用wrap时可见
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
