@@ -1,0 +1,9 @@
+{
+  "editor.accessibilitySupport": "on",
+  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "'JetBrainsMapleMono','Fira Code',Monaco,Menlo, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "'MesloLGS NF',Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 15,
+  "workbench.sideBar.location": "right"
+}
