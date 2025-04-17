@@ -16,7 +16,6 @@ return {
       "  ╚═╝  ╚═══╝  ╚═══╝  ╚═╝╚═╝     ╚═╝ ",
       "                                                     ",
     }
-
     -- Set menu
     dashboard.section.buttons.val = {
       dashboard.button("n", "  New File", "<cmd>ene<CR>"),
@@ -27,7 +26,6 @@ return {
       dashboard.button("t", "󰁯  Restore Session For Current Directory", "<cmd>SessionRestore<CR>"),
       dashboard.button("q", "  Quit NVIM", "<cmd>qa<CR>"),
     }
-
     -- Send config to alpha
     alpha.setup(dashboard.opts)
 
